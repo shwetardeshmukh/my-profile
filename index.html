@@ -9,45 +9,54 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <style>
-      section{
+      .section li{
         color: crimson; background-color: oldlace;
+       
       }
       .cap{
         text-transform: uppercase;
         text-decoration: none;
+      
       }
       .fa{
         color:rgba(47, 12, 175, 0.904);
+        margin-right: 20px;
        
       }
       .section i{
         padding-right: 40px;
 
       }
-      .nav a{
-        margin-right: 40px;
-
+      .link li{
+        display: inline-block;
+        margin-right: 60px;
       }
+     
+     
       .icon a{
         margin-left: 20px;
       }
+      .class li{
+        display: inline-block;
+      }
+      
     </style>
   </head>
   <body>
-    <section class="section">
-    <i class="fa fa-user-circle" aria-hidden="true"> Mohit Sharma</i>
-    <i class="fa fa-phone-square" aria-hidden="true"> 9999 9999 99</i>
-    <i class="fa fa-envelope" aria-hidden="true"> mohitsharma@gmail.com</i>
-    <i class="fa fa-download" aria-hidden="true">&nbsp;&nbsp;<a href="assest/Shweta_Resume (1).pdf" download="download"><button>Download Resume</button></a></i>
-  </section>
+    <section class="section"> 
+      <i class="fa fa-user-circle" aria-hidden="true"> Mohit Sharma</i>
+      <i class="fa fa-phone-square" aria-hidden="true"> 9999 9999 99</i>
+      <i class="fa fa-envelope" aria-hidden="true"> mohitsharma@gmail.com</i>
+       <i class="fa fa-download" aria-hidden="true">&nbsp;&nbsp;<a href="assest/Shweta_Resume (1).pdf" download="download"><button>Download Resume</button></a></i>
+      </section>
     <br>
-    <nav class="nav">
-      <a href="home.html" target="my frame" class="cap">Home</a>
-      <a href="techStack.html" target="my frame" class="cap"> Tech Stack</a>
-      <a href="projectDetails..html" target="my frame" class="cap"> Project</a>
-      <a href="educationDetails.html" target="my frame" class="cap">Education</a>
-      <a href="aboutMe.html" target="my frame" class="cap">About Me</a>
-    </nav>
+    <ul class="link">
+      <li><a href="home.html" target="my frame" class="cap">Home</a></li>
+      <li><a href="techStack.html" target="my frame" class="cap"> Tech Stack</a></li>
+      <li> <a href="projectDetails..html" target="my frame" class="cap"> Project</a></li>
+      <li><a href="educationDetails.html" target="my frame" class="cap">Education</a></li>
+      <li><a href="aboutMe.html" target="my frame" class="cap">About Me</a></li>
+    </ul>
     <br />
     <br />
     <iframe width="1000px" height="400px" name="my frame" src="home.html" frameborder="0"> 
@@ -56,12 +65,13 @@
     <br>
    
     <footer>
-     <span class="icon"><b>Follow Me :</b> 
-    <a href="https://github.com/"><i class="fa fa-github" aria-hidden="true"></i></a>
-    <a href="https://in.linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-   <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-    <a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-    </span>
+      <ul class="class">
+    <li> <b>Follow Me :</b> </li>
+       <li><a href="https://github.com/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+        <li> <a href="https://in.linkedin.com/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+        <li> <a href="https://www.instagram.com/"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+      </ul>
     <p>Copyright &copy; 2023 Zoom video communication, Inc.All rights reserved .</p>
     </footer>
   </body>
