@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount Calculater</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet">
+<style>
+     tr,td,p{
+        font-family: 'Alegreya Sans', sans-serif;
+        color: cadetblue;
+        font-weight: bold;
+        
+    }
+    .name{
+        background-color: #4caf50;
+        padding-left:154px ;
+        padding-right:154px ;
+        padding-top: 5px;
+        border-radius: 7px;
+        border: none;
+        transition: 0.4s all;
+        
+    }
+    input{
+       width: 360px;
+    }
+    .calcutor{
+        text-align: center;
+        text-transform: uppercase;
+        color: cadetblue;
+    }
+    button:hover{
+        background-color: burlywood;
+    }
+    button:focus{
+        outline: none;
+    }
+
+</style>
+
+</head>
+<body>
+    <fieldset style="box-shadow: 5px 5px 10px; border-radius: 5px; width: 400px;" >
+    <h2 class="calcutor">Discount Calculator</h2>
+    <p>Enter the Bill amount and discount in percentage</p>
+    <table>
+        <tbody>
+           
+           <tr> <td>Bill Amount</td></tr>
+          <tr>  <td><input></td></tr>
+           <tr> <td>Discount Percentage</td></tr>
+           <tr> <td><input type="number"></td></tr>
+            <tr><td><button class="name">Calculate</button></td></tr>
+            <tr></tr><td>Total Discount Amount</td></tr>
+        </tbody>
+    </table>
+</fieldset>
+    
+</body>
+</html>
