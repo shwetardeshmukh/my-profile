@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions properties in CSS</title>
+</head>
+<style>
+    .main{
+        display: inline-block;
+        border: 1px solid rgb(231, 219, 219);
+        box-shadow: 2px 2px 10px rgb(182, 179, 179);
+        border-radius:5px ;
+        margin: 15px;
+        position:relative;
+        top: 50px;
+         }
+    .host{
+        display: inline-block;
+        border: 1px solid rgb(231, 219, 219);
+        box-shadow: 2px 2px 10px rgb(182, 179, 179);
+        margin: 10px;
+        position:relative;
+        top: 30px;
+        border-radius: 5px;
+    }
+    .first{
+        display: inline-block;
+        background-color: rgb(16, 177, 102);
+       padding: 5px;
+       width: 170px;
+       text-align: center;
+       font-size: larger;
+       border-top-left-radius:7px; 
+       border-top-right-radius: 7px;
+       color: white;
+        
+    }
+   .second{
+      display: inline-block;
+     background-color:  rgb(190, 51, 51);
+       padding: 5px;
+       width: 170px;
+       text-align: center;
+       font-size: larger;
+       border-top-left-radius:7px; 
+      border-top-right-radius: 7px;  
+       color: white;
+   }
+   .third{
+    display: inline-block;
+        background-color:rgb(16, 177, 102);
+       padding: 5px;
+       width: 170px;
+       text-align: center;
+       font-size: larger;
+       border-top-left-radius:7px; 
+      border-top-right-radius: 7px;  
+       color: white; 
+   }
+   button{
+      margin-bottom: 15px;
+      margin-top: 10px;
+      margin-left: 23px;
+      margin-right: 5px;
+      padding-left: 50px;
+      padding-right: 50px;
+      background-color:rgb(16, 177, 102);
+      border: none;
+      border-radius: 5px;
+      height: 21px;    
+    }
+   .class li{
+    list-style-type: none;  
+   }
+     .class li::before{
+        content: "✔️";
+    font-size: 10px;   
+    }
+     .dollar{
+        text-align: center;
+        margin: 2px;
+     }  
+     span{
+        text-align: center;
+        color: white;
+        font-size: 10px;
+     }
+     .hard li{
+        list-style-type: none;
+     }
+     .hard li::before{
+        content:"✔️";
+        font-size: 10px;
+     }
+     .easy li{
+        list-style-type: none;
+     }
+     .easy li::before{
+        content:"✔️";
+        font-size: 10px;
+     }
+     #name::before{
+        content:"❌";
+     }
+
+</style>
+<body>
+    <div class="main">
+        <div class="first">Basic</div>
+        
+        <ul class="class">
+            <li>Hosting</li>
+            <li id="name">Domain</li>
+            <li>1 GB Space</li>
+            <li id="name">Free SSL</li>
+            <li>1 Website Host</li>
+        </ul>
+        <h2 class="dollar">&dollar;5</h2>
+        <a href=""><button><span>Buy Now</span></button></a>
+    </div>
+    <div class="host">
+       <div class="second">Standard</div> 
+        <ul class="easy">
+            <li>Hosting</li>
+            <li>Domain</li>
+            <li>10 GB Space</li>
+            <li id="name">Free SSL</li>
+            <li>4 Website Host</li>
+        </ul>
+        <h2 class="dollar">&dollar;10</h2>
+        <a href=""><button><span>Buy Now</span></button></a>
+    </div>
+    <div class="main">
+        <div class="third">Standard</div>
+        <ul class="hard">
+            <li>Hosting</li>
+            <li>Domain</li>
+            <li>10 GB Space</li>
+            <li>Free SSL</li>
+            <li>4 Website Host</li>
+        </ul>
+        <h2 class="dollar">&dollar;20</h2>
+       <a href=""><button type="button"><span>Buy Now</span></button></a> 
+    </div>
+    
+</body>
+</html>
